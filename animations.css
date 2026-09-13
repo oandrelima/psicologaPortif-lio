@@ -1,0 +1,14 @@
+.scroll-reveal{opacity:0;transform:translateY(35px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.scroll-reveal.is-visible{opacity:1;transform:none}
+.stagger-group article{transition:transform .3s ease,background-color .3s ease,box-shadow .3s ease}
+.stagger-group.is-visible article{animation:card-enter .6s cubic-bezier(.22,1,.36,1) both}
+.stagger-group.is-visible article:nth-child(2){animation-delay:.12s}.stagger-group.is-visible article:nth-child(3){animation-delay:.24s}
+.feeling-grid article:hover{background:#f2e9dc;transform:translateY(-8px);box-shadow:0 13px 24px rgba(24,63,67,.08)}
+.path-list article:hover{padding-left:14px;background:#f2ede4}.path-list article:hover b{transform:translate(4px,-4px);transition:transform .3s}
+.button{transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease}.button:hover{transform:translateY(-3px);box-shadow:0 10px 19px rgba(18,57,60,.2);background:#28585b}.button.sand:hover{background:#f2d9b9}
+.text-link{transition:color .25s ease,letter-spacing .25s ease}.text-link:hover{letter-spacing:.025em;color:#9b697d}
+.contact-card{transition:transform .3s ease,box-shadow .3s ease}.contact-card:hover{transform:translate(-5px,-5px);box-shadow:13px 13px 0 rgba(24,63,67,.16)}
+.brand>span{transition:transform .4s ease}.brand:hover>span{transform:rotate(12deg)}
+details{transition:padding .25s ease,background .25s ease}details:hover{background:#f5ecdf;padding-left:15px;padding-right:15px}
+@keyframes card-enter{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.scroll-reveal{opacity:1;transform:none}}
